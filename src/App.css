@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --code-font: "JetBrains Mono", monospace;
+  --primary-color: #003049;
+  --secondary-color: #669bbc;
+  --button-color: #219ebc;
+  --p-color:#333;
+}
+
+@font-face {
+  font-family: 'Marimpa';
+  src: url('./fonts/Marimpa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

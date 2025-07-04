@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code, pre {
+  font-family: var(--code-font);
+}
+
+
+body {
+  font-family: var(--code-font);
+  background-color: #fdf0d5;
+}
