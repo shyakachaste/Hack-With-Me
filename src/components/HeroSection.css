@@ -1,13 +1,14 @@
 .hero {
   position: relative;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
+  min-height: 600px;
+  background: linear-gradient(135deg, var(--background-color) 0%, rgba(102, 155, 188, 0.1) 100%);
   color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  overflow: hidden;
 }
 
 .overlay {
@@ -16,101 +17,217 @@
   left: 0;
   height: 100%;
   width: 100%;
+  background: rgba(253, 240, 213, 0.05);
+  backdrop-filter: blur(1px);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
+  width: 100%;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-content h1 {
-  font-family: "Marimpa", sans-serif;
+    font-family: "Marimpa", sans-serif;
   font-size: 5rem;
   margin: 20px 0;
   color: var(--primary-color);
 }
 
 .hero-content .subtext {
-  font-size: 1.2rem;
-  margin: 10px 0;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  margin: 0 0 1rem 0;
+  color: var(--p-color);
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-content .date {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  font-weight: 500;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  margin-bottom: 3rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-family: var(--code-font);
 }
 
 .newsletter {
   display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
   justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .newsletter input {
-  padding: 0.75rem 1.2rem;
+  flex: 1;
+  padding: 1rem 1.5rem;
   border: 2px solid var(--primary-color);
-  border-radius: 999px;
-  width: 70%;
-  max-width: 400px;
+  border-radius: 50px;
   outline: none;
   font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--code-font);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  min-width: 0;
+}
+
+.newsletter input::placeholder {
+  color: rgba(0, 48, 73, 0.6);
 }
 
 .newsletter input:focus {
   border-color: var(--button-color);
-  box-shadow: 0 0 0 3px rgba(33, 158, 188, 0.2);
+  box-shadow: 0 0 0 4px rgba(33, 158, 188, 0.15);
+  background: white;
 }
 
 .newsletter button {
-  background-color: var(--button-color);
+  background: linear-gradient(135deg, var(--button-color) 0%, var(--secondary-color) 100%);
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 999px;
-  font-weight: bold;
+  border-radius: 50px;
+  font-weight: 600;
   font-size: 1rem;
+  font-family: var(--code-font);
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(33, 158, 188, 0.3);
 }
 
 .newsletter button:hover {
-  transform: scale(1.1);
-  background-color: #1b8fa9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(33, 158, 188, 0.4);
+  background: linear-gradient(135deg, #1b8fa9 0%, #5a8db5 100%);
+}
+
+.newsletter button:active {
+  transform: translateY(0);
 }
 
 .sponsor-link {
   color: var(--primary-color);
-  font-size: 0.95rem;
-  text-decoration: underline;
+  font-size: 1rem;
+
+  font-family: var(--code-font);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .sponsor-link:hover {
   color: var(--button-color);
+  border-bottom-color: var(--button-color);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 3rem;
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 1.5rem;
   }
-
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
   .newsletter {
-    flex-direction: column;
-    align-items: center;
+    gap: 0.75rem;
   }
+}
 
-  .newsletter input {
-    width: 100%;
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+    min-height: 500px;
+  }
+  
+  .hero-content {
     max-width: 100%;
   }
-
+  
+  .hero-content h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content .subtext {
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero-content .date {
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+  }
+  
   .newsletter button {
     width: 100%;
     max-width: 200px;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .hero {
+    padding: 0.75rem;
+  }
+  
+  .newsletter input {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .newsletter button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .sponsor-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .hero-content .subtext {
+    font-size: 0.95rem;
+  }
+  
+  .newsletter input::placeholder {
+    font-size: 0.85rem;
   }
 }
