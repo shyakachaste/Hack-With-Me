@@ -186,7 +186,7 @@
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: var(--background-color);
+    background: rgba(253, 240, 213, 0.95);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -234,6 +234,11 @@
     width: 45px;
     height: 45px;
   }
+
+  .logo-container .logo {
+  width: 40px;
+  height: auto;
+}
 }
 
 @media (max-width: 480px) {

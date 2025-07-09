@@ -12,7 +12,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is Hack With Me?",
-      answer: "Hack With Me is an annual 24-hour coding hackathon designed specifically for high school students. It's the largest hackathon for high schoolers in Rwanda and across Africa, bringing students together to learn, build, and connect through technology."
+      answer: "Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others."
     },
     {
       question: "Who can participate?",

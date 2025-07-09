@@ -3,6 +3,7 @@
   min-height: 100vh;
   padding: 60px 20px;
   font-family: var(--code-font);
+  margin-top: 40px;
 }
 
 .about-container {

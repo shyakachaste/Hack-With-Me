@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
+import About from './pages/About';
 import './App.css';
 
-const About = () => <div style={{ padding: '2rem' }}>About Page</div>;
+
 const Editions = () => <div style={{ padding: '2rem' }}>Editions Page</div>;
 const Shop = () => <div style={{ padding: '2rem' }}>Shop Page</div>;
 const Gallery = () => <div style={{ padding: '2rem' }}>Gallery Page</div>;

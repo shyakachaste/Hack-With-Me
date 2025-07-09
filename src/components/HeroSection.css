@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 700px;
   background: linear-gradient(135deg, var(--background-color) 0%, rgba(102, 155, 188, 0.1) 100%);
   color: var(--primary-color);
   display: flex;
@@ -42,9 +42,9 @@
 }
 
 .hero-content h1 {
-    font-family: "Marimpa", sans-serif;
+  font-family: "Marimpa", sans-serif;
   font-size: 5rem;
-  margin: 20px 0;
+  margin: 20px ;
   color: var(--primary-color);
 }
 
@@ -172,6 +172,7 @@
   
   .hero-content h1 {
     margin-bottom: 1rem;
+    font-size: 3rem;
   }
   
   .hero-content .subtext {
