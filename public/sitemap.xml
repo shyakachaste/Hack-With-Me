@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://hackwithme.org/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://hackwithme.org/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hackwithme.org/editions</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hackwithme.org/sponsors</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hackwithme.org/projects</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-</urlset>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
+<url>
+  <loc>https://www.hackwithme.org/home</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.hackwithme.org/about</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.hackwithme.org/editions</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.hackwithme.org/sponsors</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.hackwithme.org/projects</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+</urlset>
