@@ -15,7 +15,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/hackwithme_official" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="icon instagram-icon" />
         </a>
-        <a href="https://twitter.com/hackwithme_official" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/hackwithme25" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
           <FaXTwitter className="icon twitter-icon" />
         </a>
         <a href="https://www.linkedin.com/company/hack-with-me/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">

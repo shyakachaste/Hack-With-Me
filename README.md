@@ -2,13 +2,13 @@
 
 ## About
 
-Hack With Me is an annual 2-day coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others, taking place every August. The goal of Hack With Me is to make hackathons accessible to everyone.
+Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others.
 
 
 ## 📩 Stay Connected  
-🔗 **Website:** [Click here](https://www.hackwithme2025.com/)
+🔗 **Website:** [Click here](https://www.hackwithme.org/)
 💬 **Discord:** [Join Here](https://discord.com/invite/rpsY54CDjF)  
-📧 **Email:** [hello@hackwithme2025.com](mailto:hello@hackwithme2025.com)  
+📧 **Email:** [hello@hackwithme2025.com](mailto:info@hackwithme.org)  
 
 ---
 

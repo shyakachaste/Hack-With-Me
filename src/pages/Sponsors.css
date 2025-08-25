@@ -28,7 +28,7 @@
 
 .sponsors-title {
   margin: 0 0 6px 0;
-  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: var(--primary-color);
   
 }
@@ -109,10 +109,32 @@
   background: linear-gradient(135deg, rgba(0,48,73,0.06), rgba(0,48,73,0.12));
   border: 1px solid rgba(0,48,73,0.16);
   border-radius: 16px;
-  padding: 18px 20px;
+  padding: 20px 22px;
   max-width: 720px;
   width: 100%;
   text-align: center;
+  display: grid;
+  gap: 12px;
+}
+
+.donation-intro {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: clamp(0.95rem, 2.2vw, 1rem);
+  padding: 10px 12px;
+  border-left: 4px solid var(--secondary-color);
+  background: rgba(0, 48, 73, 0.04);
+  border-radius: 8px;
+}
+
+.donation-intro a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.donation-intro a:hover {
+  text-decoration-thickness: 3px;
 }
 
 .donation-title {
@@ -134,10 +156,12 @@
   padding: 10px 16px;
   border-radius: 12px;
   font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .donation-button:hover {
-  box-shadow: 0 8px 20px rgba(0, 48, 73, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 48, 73, 0.22);
 }
 
 

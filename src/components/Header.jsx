@@ -19,7 +19,7 @@ const Header = () => {
     },
     {
       icon: FaXTwitter,
-      url: 'https://twitter.com/hackwithme_official',
+      url: 'https://twitter.com/hackwithme25',
       label: 'Twitter'
     },
     {

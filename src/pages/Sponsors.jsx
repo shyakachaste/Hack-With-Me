@@ -1,30 +1,20 @@
 import React from 'react';
 import './Sponsors.css';
 import Footer from '../components/Footer';
-
-// Logos available in assets
 import linuxFoundationLogo from '../assets/sponsors/thelinuxfoundation.png';
 import githubEducationLogo from '../assets/sponsors/github-education.png';
-import sentryLogo from '../assets/sponsors/sentry.png';
 import inspectorPlanetLogo from '../assets/sponsors/Inspector_Planet.png';
 import codecraftersLogo from '../assets/sponsors/codecrafters.png';
-import interviewCakeLogo from '../assets/sponsors/interviewcake.png';
-import ulkLogo from '../assets/sponsors/ULK LOGO.jpg';
 import umuravaLogo from '../assets/sponsors/Umurava.png';
 import dreamizeafricaLogo from '../assets/sponsors/dreamizeafrica.png';
-import xyzLogo from '../assets/sponsors/xyz.png';
 
 const sponsors = [
   { name: 'The Linux Foundation', logo: linuxFoundationLogo },
   { name: 'GitHub Education', logo: githubEducationLogo },
-  { name: 'Sentry', logo: sentryLogo },
-  { name: 'ULK', logo: ulkLogo },
   { name: 'Umurava', logo: umuravaLogo },
   { name: 'Inspector Planet', logo: inspectorPlanetLogo },
   { name: 'DreamizeAfrica', logo: dreamizeafricaLogo },
   { name: 'Codecrafters', logo: codecraftersLogo },
-  { name: '.xyz', logo: xyzLogo },
-  { name: 'Interview Cake', logo: interviewCakeLogo },
 ];
 
 const Sponsors = () => {
@@ -34,7 +24,7 @@ const Sponsors = () => {
         <div className="sponsors-container">
           <header className="sponsors-header">
             <div className="sponsors-badge">SPONSORS</div>
-            <h1 className="sponsors-title">Partners who make Hack With Me possible</h1>
+            <h1 className="sponsors-title">Hack With Me Sponsors</h1>
             <p className="sponsors-subtitle">
               Thanks to our incredible sponsors for supporting high school hackers.
             </p>
@@ -58,6 +48,7 @@ const Sponsors = () => {
 
           <div className="donation-cta">
             <div className="donation-card">
+              <p className="donation-intro">If you want to partner with us or extend a special offer, don’t hesitate to contact us at <a href="mailto:info@hackwithme.org">info@hackwithme.org</a>.</p>
               <h2 className="donation-title">Support Hack With Me</h2>
               <p className="donation-text">
                 Your donation helps us provide food, prizes, and free access for students.
