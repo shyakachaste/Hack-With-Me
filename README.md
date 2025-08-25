@@ -8,7 +8,7 @@ Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. 
 ## 📩 Stay Connected  
 🔗 **Website:** [Click here](https://www.hackwithme.org/)
 💬 **Discord:** [Join Here](https://discord.com/invite/rpsY54CDjF)  
-📧 **Email:** [hello@hackwithme2025.com](mailto:info@hackwithme.org)  
+📧 **Email:** [info@hackwithme.org](mailto:info@hackwithme.org)  
 
 ---
 
