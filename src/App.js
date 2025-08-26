@@ -6,11 +6,11 @@ import About from './pages/About';
 import Editions from './pages/Editions';
 import './App.css';
 import Sponsors from './pages/Sponsors';
+import Projects from './pages/Projects';
 
 
 const Shop = () => <div style={{ padding: '2rem' }}>Shop Page</div>;
 const Gallery = () => <div style={{ padding: '2rem' }}>Gallery Page</div>;
-const Projects = () => <div style={{ padding: '2rem' }}>Projects Page</div>;
 
 const App = () => {
   return (
