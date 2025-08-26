@@ -1,0 +1,123 @@
+.privacy-page {
+  padding: 120px 20px 80px;
+  background: var(--background-color);
+  font-family: var(--code-font);
+}
+
+.privacy-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.privacy-badge {
+  display: inline-block;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.privacy-title {
+  margin: 0 0 8px 0;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--primary-color);
+}
+
+.privacy-subtitle {
+  margin: 0 0 8px 0;
+  color: var(--p-color);
+  font-size: clamp(0.95rem, 2.2vw, 1rem);
+}
+
+/* .privacy-lead removed */
+
+.privacy-section {
+  background: #fff;
+  border: 1px solid rgba(0,48,73,0.12);
+  border-radius: 16px;
+  padding: 18px 18px;
+  margin-bottom: 14px;
+}
+
+.privacy-section h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.125rem;
+  color: var(--primary-color);
+}
+
+.privacy-section p {
+  margin: 0 0 8px 0;
+  color: var(--p-color);
+}
+
+.privacy-section ul {
+  margin: 8px 0 0 18px;
+}
+
+.privacy-section li {
+  margin: 4px 0;
+  color: var(--p-color);
+}
+
+.privacy-section a:not(.privacy-contact-link) {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.privacy-section a:not(.privacy-contact-link):hover {
+  text-decoration-thickness: 3px;
+}
+
+.privacy-note {
+  background: linear-gradient(135deg, rgba(0,48,73,0.06), rgba(0,48,73,0.12));
+  border: 1px solid rgba(0,48,73,0.16);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: var(--primary-color);
+}
+
+.privacy-contact-link {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.2vw, 1rem);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.privacy-contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 48, 73, 0.22);
+}
+
+.privacy-contact-link:focus-visible {
+  outline: 3px solid rgba(79, 70, 229, 0.5);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .privacy-section {
+    padding: 16px 14px;
+  }
+
+  .privacy-contact-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

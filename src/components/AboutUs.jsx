@@ -40,12 +40,10 @@ const AboutUs = () => {
             
             <div className="about-description">
               <p>
-               Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. 
-               Students come together to build projects, solve problems, and share their skills with others.
+              Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others.
               </p>
               <p>
-               The goal of Hack With Me is to make hackathons accessible to everyone — even if you don’t have a team or idea, 
-               you’ll still be able to build something great with the help of mentors and workshops.
+               The goal of Hack With Me is to make hackathons accessible to everyone.In addition to the main edition, we sometimes host smaller ‘half-editions’ to keep the community active and give students more chances to collaborate.
               </p>
               <p>
                Hack With Me is the largest hackathon for high schoolers in Rwanda and across Africa, 

@@ -7,6 +7,9 @@ import Editions from './pages/Editions';
 import './App.css';
 import Sponsors from './pages/Sponsors';
 import Projects from './pages/Projects';
+import CodeOfConduct from './pages/CodeOfConduct';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 
 const Shop = () => <div style={{ padding: '2rem' }}>Shop Page</div>;
@@ -27,6 +30,9 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/code-of-conduct" element={<CodeOfConduct />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
         </div>
       </div>
