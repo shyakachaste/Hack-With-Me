@@ -2,27 +2,10 @@ import React from 'react';
 import './Editions.css';
 import { FaCalendarAlt, FaMapMarkerAlt, FaHashtag } from 'react-icons/fa';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet-async';
 
 const Editions = () => {
   return (
     <>
-    <Helmet>
-      <title>Editions — Hack With Me</title>
-      <meta name="description" content="Explore Hack With Me past editions: dates, venues, winners, and highlights." />
-      <link rel="canonical" href="https://hackwithme.org/editions" />
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Hack With Me" />
-      <meta property="og:url" content="https://hackwithme.org/editions" />
-      <meta property="og:title" content="Editions — Hack With Me" />
-      <meta property="og:description" content="Explore Hack With Me past editions: dates, venues, winners, and highlights." />
-      <meta property="og:image" content="/hackwithme_xbanner.png" />
-      <meta property="og:image:alt" content="Hack With Me banner" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Editions — Hack With Me" />
-      <meta name="twitter:description" content="Explore Hack With Me past editions: dates, venues, winners, and highlights." />
-      <meta name="twitter:image" content="/hackwithme_xbanner.png" />
-    </Helmet>
     <section className="editions-page">
       <div className="editions-container">
         <header className="editions-header">

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaDiscord } from 'react-icons/fa';
 import './AboutSection.css';
-// Removed AboutImage import
 import AboutImage2 from '../assets/about_2.JPG';
 import AboutImage3 from '../assets/about_3.JPG';
 

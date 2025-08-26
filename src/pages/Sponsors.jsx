@@ -2,7 +2,6 @@ import React from 'react';
 import './Sponsors.css';
 import Footer from '../components/Footer';
 import linuxFoundationLogo from '../assets/sponsors/thelinuxfoundation.png';
-import { Helmet } from 'react-helmet-async';
 import githubEducationLogo from '../assets/sponsors/github-education.png';
 import inspectorPlanetLogo from '../assets/sponsors/Inspector_Planet.png';
 import codecraftersLogo from '../assets/sponsors/codecrafters.png';
@@ -21,22 +20,6 @@ const sponsors = [
 const Sponsors = () => {
   return (
     <>
-      <Helmet>
-        <title>Sponsors — Hack With Me</title>
-        <meta name="description" content="See our partners supporting high school hackers, and learn how to sponsor Hack With Me." />
-        <link rel="canonical" href="https://hackwithme.org/sponsors" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Hack With Me" />
-        <meta property="og:url" content="https://hackwithme.org/sponsors" />
-        <meta property="og:title" content="Sponsors — Hack With Me" />
-        <meta property="og:description" content="See our partners supporting high school hackers, and learn how to sponsor Hack With Me." />
-        <meta property="og:image" content="/hackwithme_xbanner.png" />
-        <meta property="og:image:alt" content="Hack With Me banner" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sponsors — Hack With Me" />
-        <meta name="twitter:description" content="See our partners supporting high school hackers, and learn how to sponsor Hack With Me." />
-        <meta name="twitter:image" content="/hackwithme_xbanner.png" />
-      </Helmet>
       <section className="sponsors-page">
         <div className="sponsors-container">
           <header className="sponsors-header">
