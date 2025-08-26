@@ -7,27 +7,32 @@
 
 
 <url>
-  <loc>https://www.hackwithme.org/home</loc>
+  <loc>https://hackwithme.org/</loc>
   <lastmod>2025-08-25T15:22:46+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://www.hackwithme.org/about</loc>
+  <loc>https://hackwithme.org/home</loc>
   <lastmod>2025-08-25T15:22:46+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://www.hackwithme.org/editions</loc>
+  <loc>https://hackwithme.org/about</loc>
   <lastmod>2025-08-25T15:22:46+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://www.hackwithme.org/sponsors</loc>
+  <loc>https://hackwithme.org/editions</loc>
   <lastmod>2025-08-25T15:22:46+00:00</lastmod>
 </url>
 
 <url>
-  <loc>https://www.hackwithme.org/projects</loc>
+  <loc>https://hackwithme.org/sponsors</loc>
+  <lastmod>2025-08-25T15:22:46+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://hackwithme.org/projects</loc>
   <lastmod>2025-08-25T15:22:46+00:00</lastmod>
 </url>
 
