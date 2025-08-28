@@ -1,9 +1,15 @@
 import React from 'react';
+import useSEO from './useSEO';
 import Footer from '../components/Footer';
 import './Terms.css';
 
 const Terms = () => {
   const effectiveDate = 'August 26, 2025';
+  useSEO({
+    title: 'Terms — Hack With Me',
+    description: 'Read the terms of service for Hack With Me.',
+    canonical: 'https://hackwithme.org/terms'
+  });
 
   return (
     <>

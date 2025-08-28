@@ -22,8 +22,8 @@ const App = () => {
         <Header />
         <div className="page-content">
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/editions" element={<Editions />} />
           <Route path="/shop" element={<Shop />} />

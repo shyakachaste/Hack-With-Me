@@ -1,4 +1,5 @@
 import React from 'react';
+import useSEO from './useSEO';
 import './Sponsors.css';
 import Footer from '../components/Footer';
 import linuxFoundationLogo from '../assets/sponsors/thelinuxfoundation.png';
@@ -18,6 +19,11 @@ const sponsors = [
 ];
 
 const Sponsors = () => {
+  useSEO({
+    title: 'Sponsors — Hack With Me',
+    description: 'Meet the organizations supporting Hack With Me.',
+    canonical: 'https://hackwithme.org/sponsors'
+  });
   return (
     <>
       <section className="sponsors-page">

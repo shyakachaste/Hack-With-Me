@@ -39,6 +39,27 @@
   font-size: clamp(0.95rem, 2.2vw, 1.05rem);
 }
 
+/* Inline stat pills inside each edition card */
+.edition-stats-inline {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,48,73,0.08);
+  border: 1px solid rgba(0,48,73,0.18);
+}
+
+.stat-pill .num { font-weight: 900; color: var(--primary-color); }
+.stat-pill .lbl { font-weight: 700; color: var(--p-color); font-size: 0.9rem; }
+
 .editions-grid {
   display: grid;
   grid-template-columns: 1fr;
