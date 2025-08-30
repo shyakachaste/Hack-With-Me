@@ -1,6 +1,10 @@
 import shejaCards from '../assets/projects/shejacards.png';
 import jambo from '../assets/projects/jambo.png';
 import wastey from '../assets/projects/wastey.png';
+import menyacheck from '../assets/projects/menyacheck.png';
+import torarwanda from '../assets/projects/torarwanda.jpg';
+import smarthome from '../assets/projects/smarthome.png';
+
 
 const SIMPLE_EDITIONS = [
   {
@@ -25,7 +29,25 @@ const SIMPLE_EDITIONS = [
         liveUrl: 'https://wastey.vercel.app/',
         image: wastey
       },
+      {
+        title: 'Menya Check',
+        description: ' Is a health platform that allows users to Book doctor appointments,take a health quiz for advice & medicine prescriptions and use an emergency system that shares your location with an ambulance driver',
+        liveUrl: 'https://hack01-zwt9.vercel.app/',
+        image: menyacheck
+      },
 
+      {
+        title: 'Tora Rwanda',
+        description: 'Its a project that supports decentralised voting using IoT and blockchain for safe and immutable elections Name and contact of project owner', 
+        liveUrl: 'https://torarwanda.netlify.app',
+        image: torarwanda
+      },
+      {
+        title: 'Smart Home',
+        description: 'This project aimed to have full control and management of you house light and monitoring environmental condition such as humidity and  temperature and management your parking slots at home ', 
+        liveUrl: 'https://smarthomemonitor.netlify.app/',
+        image: smarthome
+      },
     ]
   },
 
