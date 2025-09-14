@@ -1,0 +1,11 @@
+/* Page-level About layout wrapper (if needed by About page) */
+.about-page {
+  padding: clamp(80px, 10vw, 120px) 20px clamp(60px, 8vw, 80px);
+  background: var(--background-color);
+}
+
+.about-page .about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+

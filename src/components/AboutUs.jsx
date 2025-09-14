@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaEnvelope } from 'react-icons/fa';
 import './AboutSection.css';
 import AboutImage2 from '../assets/about_2.JPG';
 import AboutImage3 from '../assets/about_3.JPG';
@@ -54,6 +54,7 @@ const AboutUs = () => {
             <div className="contact-section">
               <span className="contact-text">For any inquiries, contact us at:</span>
               <a href="mailto:info@hackwithme.org" className="contact-email">
+                <FaEnvelope className="email-icon" aria-hidden="true" />
                 info@hackwithme.org
               </a>
             </div>

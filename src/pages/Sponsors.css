@@ -1,5 +1,5 @@
 .sponsors-page {
-  padding: 120px 20px 80px;
+  padding: clamp(80px, 10vw, 120px) 20px clamp(60px, 8vw, 80px);
   background: var(--background-color);
   font-family: var(--code-font);
 }
@@ -12,6 +12,16 @@
 .sponsors-header {
   text-align: center;
   margin-bottom: 36px;
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .sponsors-header { text-align: left; }
+  .sponsors-badge { padding: 6px 14px; font-size: 11px; margin-top: 0; }
+  .sponsors-subtitle { margin: 0; }
+}
+
+@media (max-width: 480px) {
+  .sponsors-badge { padding: 6px 12px; font-size: 10.5px; margin-top: 0; }
 }
 
 .sponsors-badge {
@@ -19,30 +29,33 @@
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
   border-radius: 999px;
-  padding: 6px 14px;
+  padding: 8px 20px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
 .sponsors-title {
   margin: 0 0 6px 0;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   color: var(--primary-color);
-  
 }
 
 .sponsors-subtitle {
   margin: 0;
   color: var(--p-color);
-  font-size: clamp(0.95rem, 2.2vw, 1rem);
+  font-size: clamp(0.9rem, 2.4vw, 1.05rem);
+  max-width: 65ch;
+  margin-inline: auto;
+  text-wrap: pretty;
 }
 
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: clamp(12px, 3vw, 20px);
   margin-top: 28px;
 }
 
@@ -50,7 +63,7 @@
   background: rgba(0, 48, 73, 0.04);
   border: 1px solid rgba(0, 48, 73, 0.12);
   border-radius: 12px;
-  padding: 16px;
+  padding: clamp(12px, 2.5vw, 16px);
   display: flex;
   align-items: center;
   justify-content: center;

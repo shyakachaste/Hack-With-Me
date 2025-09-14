@@ -1,5 +1,5 @@
 .editions-page {
-  padding: 120px 20px 80px;
+  padding: clamp(80px, 10vw, 120px) 20px clamp(60px, 8vw, 80px);
   background: var(--background-color);
   font-family: var(--code-font);
 }
@@ -12,6 +12,7 @@
 .editions-header {
   text-align: center;
   margin-bottom: 48px;
+  margin-top: 100px;
 }
 
 .editions-badge {
@@ -19,24 +20,28 @@
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
   border-radius: 999px;
-  padding: 6px 14px;
+  padding: 8px 20px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  margin-top: 0;
   margin-bottom: 14px;
 }
 
 .editions-title {
   margin: 0 0 8px 0;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   color: var(--primary-color);
-  
+  text-wrap: balance;
 }
 
 .editions-subtitle {
   margin: 0;
   color: var(--p-color);
-  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  font-size: clamp(0.9rem, 2.4vw, 1.05rem);
+  max-width: 65ch;
+  margin-inline: auto;
+  text-wrap: pretty;
 }
 
 /* Inline stat pills inside each edition card */
@@ -138,6 +143,27 @@
   .editions-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 768px) {
+  .editions-page {
+    padding: 80px 16px 60px;
+  }
+  .editions-header { text-align: left; }
+  .edition-card {
+    padding: 16px;
+  }
+  .edition-name {
+    font-size: 1.1rem;
+  }
+  .editions-badge { padding: 6px 14px; font-size: 11px; margin-top: 0; }
+  .editions-subtitle { margin: 0; }
+}
+
+@media (max-width: 480px) {
+  .editions-title { font-size: 1.4rem; }
+  .editions-subtitle { font-size: 0.9rem; }
+  .editions-badge { padding: 6px 12px; font-size: 10.5px; margin-top: 0; }
 }
 
 /* Edition details page */

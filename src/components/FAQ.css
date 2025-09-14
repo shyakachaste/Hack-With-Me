@@ -15,31 +15,36 @@
 
 .faq-badge {
   display: inline-block;
-  border: 2px solid #003049;
-  border-radius: 25px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 999px;
   padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #003049;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--secondary-color);
   margin-bottom: 20px;
 }
 
 .faq-title {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
   font-weight: 400;
   font-style: italic;
   color: #003049;
   margin: 0 0 20px 0;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 .faq-subtitle {
-  font-size: 18px;
+  font-size: clamp(0.95rem, 2.4vw, 1.125rem);
   color: #6c757d;
-  line-height: 1.6;
-  max-width: 600px;
+  line-height: 1.65;
+  max-width: 65ch;
   margin: 0 auto;
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .faq-content {
@@ -167,11 +172,15 @@
   }
 
   .faq-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .faq-subtitle {
-    font-size: 16px;
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 0;
+    max-width: 60ch;
+    line-height: 1.7;
   }
 }
 
@@ -190,6 +199,11 @@
   }
 
   .faq-title {
-    font-size: 2rem;
+    font-size: 1.65rem;
+  }
+
+  .faq-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.75;
   }
 }

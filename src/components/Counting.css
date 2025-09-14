@@ -34,15 +34,15 @@
 .counting-badge {
   display: inline-block;
   border: 2px solid var(--secondary-color);
-  border-radius: 25px;
+  border-radius: 999px;
   padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   margin-bottom: 30px;
   color: var(--secondary-color);
   animation: pulse-border 2s infinite;
-  font-family: 'MainFont', sans-serif;
+  font-family: var(--code-font);
 }
 
 @keyframes pulse-border {
@@ -55,13 +55,14 @@
 }
 
 .counting-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px 0;
   color: white;
   font-style: italic;
   font-family: var(--code-font);
+  text-wrap: balance;
 }
 
 .counting-subtitle {
@@ -173,7 +174,7 @@
   }
   
   .counting-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   .counting-subtitle {
@@ -204,6 +205,10 @@
   
   .counting-header {
     margin-bottom: 50px;
+  }
+  
+  .counting-title {
+    font-size: 1.65rem;
   }
   
   .stat-card {

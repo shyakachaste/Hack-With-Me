@@ -222,9 +222,12 @@
   .mobile-title { margin: 8px 0 6px; font-size: 1.1rem; color: var(--primary-color); }
   .mobile-desc { margin: 0 0 8px; color: var(--p-color); line-height: 1.45; }
   .mobile-actions { display: flex; }
+  .projects-header { text-align: left; }
+  .projects-subtitle { margin: 0; }
+  .projects-badge { padding: 6px 14px; font-size: 11px; margin-top: 0; }
 }
 .projects-page {
-  padding: 120px 20px 80px;
+  padding: clamp(80px, 10vw, 120px) 20px clamp(60px, 8vw, 80px);
   background: var(--background-color);
   font-family: var(--code-font);
 }
@@ -237,6 +240,7 @@
 .projects-header {
   text-align: center;
   margin-bottom: 32px;
+  margin-top: 100px;
 }
 
 .projects-header-actions { margin-top: 14px; }
@@ -246,23 +250,31 @@
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
   border-radius: 999px;
-  padding: 6px 14px;
+  padding: 8px 20px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
 .projects-title {
   margin: 0 0 8px 0;
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
   color: var(--primary-color);
+  text-wrap: balance;
 }
 
 .projects-subtitle {
   margin: 0 0 8px 0;
   color: var(--p-color);
-  font-size: clamp(0.95rem, 2.2vw, 1rem);
+  font-size: clamp(0.9rem, 2.4vw, 1.05rem);
+  max-width: 65ch;
+  margin-inline: auto;
+  text-wrap: pretty;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .projects-toolbar {
@@ -460,6 +472,15 @@
   .projects-actions {
     flex-direction: column;
   }
+  .projects-title { font-size: 1.4rem; }
+  .projects-subtitle { font-size: 0.9rem; }
+  .projects-badge { padding: 6px 12px; font-size: 10.5px; }
+}
+
+/* Ensure header and badge align left on mobile, declared after base rules */
+@media (max-width: 768px) {
+  .projects-header { text-align: left; }
+  .projects-subtitle { margin: 0; }
 }
 
 

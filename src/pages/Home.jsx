@@ -15,7 +15,9 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <AboutUs />
+      <div className="about-page">
+        <AboutUs />
+      </div>
       <Counting />
       <FAQ />
       <Footer />

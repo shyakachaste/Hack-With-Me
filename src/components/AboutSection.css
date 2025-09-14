@@ -25,18 +25,18 @@
 
 .about-badge {
   display: inline-block;
-  border: 2px solid var(--primary-color);
-  border-radius: 25px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 999px;
   padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   margin-bottom: 30px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .about-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 40px 0;
@@ -47,6 +47,7 @@
 
 .about-description {
   margin-bottom: 50px;
+  max-width: 65ch;
 }
 
 .about-description p {
@@ -89,8 +90,7 @@
   transform: translateY(-2px);
 }
 
-.contact-email::before {
-  content: "✉";
+.email-icon {
   font-size: 18px;
 }
 
@@ -272,11 +272,11 @@
   .about-content {
     grid-template-columns: 1fr;
     gap: 40px;
-    text-align: center;
+    text-align: left;
   }
   
   .about-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   
   .about-description p {
@@ -307,7 +307,7 @@
   }
   
   .about-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   
   .about-description p {
