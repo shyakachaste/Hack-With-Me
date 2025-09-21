@@ -8,16 +8,14 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   useSEO({
-    title: 'Hack With Me — Rwanda\'s Largest high school hackathon',
-    description: 'Join the largest in-person high school hackathon in Rwanda and Africa — build projects, learn, and connect.',
+    title: 'Hack With Me',
+    description: 'Join the largest in-person high school hackathon in Rwanda and Africa — 24 hours of coding cool projects with others',
     canonical: 'https://hackwithme.org/'
   });
   return (
     <>
       <HeroSection />
-      <div className="about-page">
-        <AboutUs />
-      </div>
+      <AboutUs />
       <Counting />
       <FAQ />
       <Footer />
