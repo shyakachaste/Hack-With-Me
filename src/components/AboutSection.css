@@ -90,7 +90,6 @@
 }
 
 .contact-email::before {
-  content: "✉";
   font-size: 18px;
 }
 
