@@ -75,7 +75,7 @@ const Counting = () => {
       <div className="counting-container">
         <div className="counting-header">
           <div className="counting-badge">LAST YEAR</div>
-          <h2 className="counting-title">Our Amazing Numbers</h2>
+          <h2 className="counting-title">What we achieved</h2>
           <p className="counting-subtitle">
             Here's what made our previous hackathon incredible
           </p>
