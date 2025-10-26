@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
   --code-font: "JetBrains Mono", monospace;
+  --body-font: 'Roboto', sans-serif;
   --primary-color: #003049;
   --secondary-color: #669bbc;
   --button-color: #219ebc;

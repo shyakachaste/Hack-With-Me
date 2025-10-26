@@ -44,11 +44,13 @@ const Header = () => {
 
         <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
           <ul className="nav-links">
-            <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-            <li><Link to="/editions" onClick={closeMenu}>Editions</Link></li>
-            <li><Link to="/sponsors" onClick={closeMenu}>Sponsors</Link></li>
-            <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-          </ul>
+            <li><a href="#about" onClick={closeMenu}>About</a></li>
+            <li><a href="#events" onClick={closeMenu}>Events</a></li>
+            <li><a href="#sponsors" onClick={closeMenu}>Sponsors</a></li>
+            <li><a href="#faq" onClick={closeMenu}>FAQ</a></li>
+         </ul>
+
+
           
           <div className="social-links">
             {socialLinks.map((social, index) => {

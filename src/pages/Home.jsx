@@ -5,6 +5,8 @@ import AboutUs from '../components/AboutUs';
 import Counting from '../components/Counting';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
+import Sponsors from '../components/Sponsors';
+import Events from '../components/Events';
 
 const Home = () => {
   useSEO({
@@ -17,6 +19,8 @@ const Home = () => {
       <HeroSection />
       <AboutUs />
       <Counting />
+      <Events />
+      <Sponsors />
       <FAQ />
       <Footer />
     </>

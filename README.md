@@ -2,7 +2,7 @@
 
 ## About
 
-Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others.
+Join the largest in-person high school hackathon in Rwanda and Africa - 24 hours of coding cool projects with others.
 
 
 ## 📩 Stay Connected  

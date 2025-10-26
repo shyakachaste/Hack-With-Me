@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaDiscord, FaEnvelope } from 'react-icons/fa';
+import { FaWhatsapp, FaDiscord } from 'react-icons/fa';
 import './AboutSection.css';
 import AboutImage2 from '../assets/about_2.JPG';
 import AboutImage3 from '../assets/about_3.JPG';
@@ -7,7 +7,6 @@ import AboutImage3 from '../assets/about_3.JPG';
 const AboutUs = () => {
   useEffect(() => {
     const badges = document.querySelectorAll('.badge-grid .hackathon-badge');
-    const discordCard = document.querySelector('.discord-card');
     if (!('IntersectionObserver' in window)) {
       badges.forEach((el) => el.classList.add('is-visible'));
       return;
@@ -26,12 +25,11 @@ const AboutUs = () => {
     );
 
     badges.forEach((el) => observer.observe(el));
-    if (discordCard) observer.observe(discordCard);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-container">
         <div className="about-content">
           <div className="text-section">
@@ -40,23 +38,32 @@ const AboutUs = () => {
             
             <div className="about-description">
               <p>
-              Hack With Me is an annual 24-hour coding hackathon designed for high schoolers. Students come together to build projects, solve problems, and share their skills with others.
+                Hack With Me is the largest hackathon for high schoolers in Rwanda and across Africa, bringing students together to learn, build, and connect. It's an annual 24-hour coding hackathon designed for high schoolers.
               </p>
               <p>
-               The goal of Hack With Me is to make hackathons accessible to everyone.In addition to the main edition, we sometimes host smaller ‘half-editions’ to keep the community active and give students more chances to collaborate.
+                The goal of Hack With Me is to make hackathons accessible to everyone. In addition to the main edition, we sometimes host smaller 'half-editions' to keep the community active and give students more chances to collaborate.
               </p>
-              <p>
-               Hack With Me is the largest hackathon for high schoolers in Rwanda and across Africa, 
-               bringing students together to learn, build, and connect.
-              </p>
-
-            </div>
-            <div className="contact-section">
-              <span className="contact-text">For any inquiries, contact us at:</span>
-              <a href="mailto:info@hackwithme.org" className="contact-email">
-                <FaEnvelope className="email-icon" aria-hidden="true" />
-                info@hackwithme.org
-              </a>
+            
+              <div className="social-buttons">
+                <a 
+                  href="https://chat.whatsapp.com/L8lDl5s5b7RJfZJupghzAw?mode=ems_copy_t" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="social-button whatsapp-button"
+                >
+                  <FaWhatsapp className="social-icon" />
+                  Join WhatsApp
+                </a>
+                <a 
+                  href="https://discord.com/invite/rpsY54CDjF" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="social-button discord-button"
+                >
+                  <FaDiscord className="social-icon" />
+                  Join Discord
+                </a>
+              </div>
             </div>
           </div>
 
@@ -72,25 +79,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
-      {/* Discord CTA */}
-      <div className="discord-cta">
-        <div className="discord-card" aria-label="Join our Discord community">
-          <div className="discord-card-content">
-            <h3 className="discord-title">Join Our Discord Community</h3>
-            <a
-              className="discord-button"
-              href="https://discord.com/invite/rpsY54CDjF"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaDiscord className="discord-icon" />
-              Join Discord
-            </a>
-          </div>
-        </div>
-      </div>
-
     </section>
   );
 };
