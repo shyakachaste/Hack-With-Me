@@ -23,7 +23,7 @@ const Terms = () => {
 
           <div className="terms-section">
             <h2>About Hack With Me</h2>
-            <p>Hack With Me is a high‑school hackathon in Rwanda. We host a flagship 24‑hour coding event and related community activities. Our site shares event details and connects with sponsors, volunteers, and participants.</p>
+            <p>Hack With Me is one of the largest hackathons in Rwanda and across Africa, bringing students together to team up and build cool projects. In 2025, we were recognized as the biggest high school hackathon. Our goal is to make hackathons more accessible to everyone.</p>
           </div>
 
           <div className="terms-section">

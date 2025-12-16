@@ -15,7 +15,7 @@ const CodeOfConduct = () => {
 
           <div className="coc-section">
             <h2>Our values</h2>
-            <p>Hack With Me brings high‑school students together to build, learn, and help each other. We value kindness, curiosity, and shipping real projects.</p>
+            <p>Hack With Me brings students together to build, learn, and help each other. We value kindness, curiosity, and shipping real projects.</p>
           </div>
 
           <div className="coc-section">

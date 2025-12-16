@@ -17,7 +17,7 @@ const Privacy = () => {
 
           <div className="privacy-section">
             <h2>Who we are</h2>
-            <p>Hack With Me is a high-school hackathon — the largest in-person high-school hackathon in Rwanda and across Africa. We organize a flagship 24-hour coding event each year, where students form teams, build real projects, learn from mentors, and showcase their work. In addition to the main edition, we sometimes host smaller ‘half-editions’ to keep the community active and give students more chances to collaborate.</p>
+            <p>Hack With Me is one of the largest hackathons in Rwanda and across Africa, bringing students together to team up and build cool projects. In 2025, we were recognized as the biggest high school hackathon. Our goal is to make hackathons more accessible to everyone.</p>
           </div>
 
           <div className="privacy-section">
@@ -56,7 +56,7 @@ const Privacy = () => {
 
           <div className="privacy-section">
             <h2>Minors</h2>
-            <p>Hack With Me is for high‑school students. We limit what we collect and communicate clearly with participants and guardians when required by school or venue policy.</p>
+            <p>Hack With Me is for students only. We limit what we collect and communicate clearly with participants and guardians when required by school or venue policy.</p>
           </div>
 
           <div className="privacy-section">

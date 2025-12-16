@@ -38,7 +38,7 @@ const AboutUs = () => {
             
             <div className="about-description">
               <p>
-                Hack With Me is the largest hackathon for high schoolers in Rwanda and across Africa, bringing students together to learn, build, and connect. It's an annual 24-hour coding hackathon designed for high schoolers.
+                Hack With Me is one of the largest hackathons in Rwanda and across Africa, bringing students together to team up and build cool projects. In 2025, we were recognized as the biggest high school hackathon. Our goal is to make hackathons more accessible to everyone.
               </p>
               <p>
                 The goal of Hack With Me is to make hackathons accessible to everyone. In addition to the main edition, we sometimes host smaller 'half-editions' to keep the community active and give students more chances to collaborate.
